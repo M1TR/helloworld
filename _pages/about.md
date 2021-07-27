@@ -2,7 +2,11 @@
 layout: page
 title: About Me
 permalink: /about/
+choice: 'Machine Learning Engineer'
 ---
+
+I'm interested in becoming a {{page.choice}}
+
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
