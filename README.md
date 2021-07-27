@@ -8,11 +8,16 @@ https://M1TR.github.io/helloworld/
 
 # My Blog
 
+This is the backend to my personal blog where I plan to document my learning journey and projects. Changes to the look and feel of the blog, especially themes, can potentially break _fastpages_, so desisting for now. I will be on the lookout for how to customise small individual elements of the site; the masthead font size has already been increased  by editing `custom-styles.css`.
+
+_To-do: Figure out a way to place a custom paragraph of text in the site footer and shorten the site description in_ `_config.yml`.
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
 
 
 ## What To Do Next?
+
+_Keeping this boilerplate here for now_
 
 Great!  You have setup your repo.  Now its time to start writing content.  Some helpful links:
 
@@ -24,6 +29,4 @@ Great!  You have setup your repo.  Now its time to start writing content.  Some 
 
 - [(Optional) Preview Your Blog Locally](_fastpages_docs/DEVELOPMENT.md)
 
-Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.
-
-Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
+**Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.**
