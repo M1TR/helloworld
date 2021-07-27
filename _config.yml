@@ -42,6 +42,11 @@ minima:
     twitter: M1TR
     github: M1TR
 
+# Site author details for footer
+author:
+  name: "Subhom Mitra"
+  email: "mitra.subhom@gmail.com"
+
 # Set this to true to get LaTeX math equation support
 use_math: 
 
