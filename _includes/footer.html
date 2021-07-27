@@ -15,10 +15,10 @@
         {%- if site.author %}
           <ul class="contact-list">
             {% if site.author.name -%}
-              <li class="p-name">{{ site.author.name | 'Subhom Mitra' }}</li>
+              <li class="p-name">{{ 'Subhom Mitra' | site.author.name }</li>
             {% endif -%}
             {% if site.author.email -%}
-              <li><a class="u-email" href="mailto:{{ site.author.email | mitra.subhom@gmail.com}}">{{ site.author.email | mitra.subhom@gmail.com}}</a></li>
+              <li><a class="u-email" href="mailto:{{ 'mitra.subhom@gmail.com' | site.author.email}}">{{ 'mitra.subhom@gmail.com' | site.author.email}}</a></li>
             {%- endif %}
           </ul>
         {%- endif %}

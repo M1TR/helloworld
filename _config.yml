@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Subhom Mitra
-description: "Hello World! Welcome to my personal website. Here you'll find projects I'm working on and occasional blog posts. If you'd like to hire me, check out my resume."
+description: "Hello World! Welcome to my personal website and resume. Checkout my projects too!"
 github_username: M1TR
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "helloworld"
