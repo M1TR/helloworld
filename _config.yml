@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Subhom Mitra
-description: Hello, World! Welcome to my personal website.
+description: "Hello World! Welcome to my personal website. Here you'll find projects I'm working on and occasional blog posts. If you'd like to hire me, check out my resume."
 github_username: M1TR
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "helloworld"
@@ -39,9 +39,9 @@ baseurl: "/helloworld" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: m1tr
+    twitter: M1TR
     github: M1TR
-  email: mitra.subhom@gmail.com
+    email: mitra.subhom@gmail.com
 
 # Set this to true to get LaTeX math equation support
 use_math: 
