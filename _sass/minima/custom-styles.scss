@@ -6,7 +6,9 @@
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-//.site-title {font-size: 50px};
+.site-title {font-size: 50px};
+.site-header {border-bottom: 0px solid};
+.site-footer {border-top: 0px solid};
 
 //Enabling dark mode
 @import "minima/dark-mode";
