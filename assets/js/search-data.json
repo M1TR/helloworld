@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "I’m interested in becoming a Machine Learning Engineer . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "I’m interested in becoming a Machine Learning Engineer. Please check out my resume here. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://m1tr.github.io/helloworld/about/",
           "relUrl": "/about/",
           "date": ""
@@ -40,17 +40,6 @@
   
 
   
-      ,"page3": {
-          "title": "Resume",
-          "content": "I’m interested in becoming a Machine Learning Engineer . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://m1tr.github.io/helloworld/resume/",
-          "relUrl": "/resume/",
-          "date": ""
-      }
-      
-  
-
-  
   
 
   
@@ -70,7 +59,7 @@
   
 
   
-      ,"page11": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://m1tr.github.io/helloworld/robots.txt",
