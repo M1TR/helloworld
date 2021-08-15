@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>My Fast.ai Journey - Chapter 0 | Subhom Mitra</title>
+<title>My Fast.ai Journey - Some Basic Theory | Subhom Mitra</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="My Fast.ai Journey - Chapter 0" />
+<meta property="og:title" content="My Fast.ai Journey - Some Basic Theory" />
 <meta name="author" content="Subhom Mitra" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An introduction to a series of articles about Part 1 of the Fast.ai MOOC and my plans for a capstone project." />
-<meta property="og:description" content="An introduction to a series of articles about Part 1 of the Fast.ai MOOC and my plans for a capstone project." />
-<link rel="canonical" href="https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/12/fastai-0.html" />
-<meta property="og:url" content="https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/12/fastai-0.html" />
+<meta name="description" content="An brief overview of the theory of machine learning and its jargon." />
+<meta property="og:description" content="An brief overview of the theory of machine learning and its jargon." />
+<link rel="canonical" href="https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/fastai-intro.html" />
+<meta property="og:url" content="https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/fastai-intro.html" />
 <meta property="og:site_name" content="Subhom Mitra" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-12T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-08-16T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-08-12T00:00:00-05:00","url":"https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/12/fastai-0.html","@type":"BlogPosting","headline":"My Fast.ai Journey - Chapter 0","dateModified":"2021-08-12T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/12/fastai-0.html"},"author":{"@type":"Person","name":"Subhom Mitra"},"description":"An introduction to a series of articles about Part 1 of the Fast.ai MOOC and my plans for a capstone project.","@context":"https://schema.org"}</script>
+{"datePublished":"2021-08-16T00:00:00-05:00","url":"https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/fastai-intro.html","@type":"BlogPosting","headline":"My Fast.ai Journey - Some Basic Theory","dateModified":"2021-08-16T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/fastai-intro.html"},"author":{"@type":"Person","name":"Subhom Mitra"},"description":"An brief overview of the theory of machine learning and its jargon.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/helloworld/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://m1tr.github.io/helloworld/feed.xml" title="Subhom Mitra" /><link rel="shortcut icon" type="image/x-icon" href="/helloworld/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,13 +72,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">My Fast.ai Journey - Chapter 0</h1><p class="page-description">An introduction to a series of articles about Part 1 of the Fast.ai MOOC and my plans for a capstone project.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-12T00:00:00-05:00" itemprop="datePublished">
-        Aug 12, 2021
+    <h1 class="post-title p-name" itemprop="name headline">My Fast.ai Journey - Some Basic Theory</h1><p class="page-description">An brief overview of the theory of machine learning and its jargon.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-16T00:00:00-05:00" itemprop="datePublished">
+        Aug 16, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -91,7 +91,7 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/helloworld/categories/#jupyter">jupyter</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/helloworld/categories/#fastai">fastai</a>
+        <a class="category-tags-link" href="/helloworld/categories/#fast.ai">fast.ai</a>
         
       
       </p>
@@ -102,19 +102,19 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/M1TR/helloworld/tree/master/_notebooks/2021-08-12-fastai-0.ipynb" role="button" target="_blank">
+    <a href="https://github.com/M1TR/helloworld/tree/master/_notebooks/2021-08-16-fastai-intro.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/helloworld/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/M1TR/helloworld/master?filepath=_notebooks%2F2021-08-12-fastai-0.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/M1TR/helloworld/master?filepath=_notebooks%2F2021-08-16-fastai-intro.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/helloworld/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/M1TR/helloworld/blob/master/_notebooks/2021-08-12-fastai-0.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/M1TR/helloworld/blob/master/_notebooks/2021-08-16-fastai-intro.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/helloworld/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
@@ -126,94 +126,28 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2021-08-12-fastai-0.ipynb
+# file to edit: _notebooks/2021-08-16-fastai-intro.ipynb
 -->
 
 <div class="container" id="notebook-container">
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I won't lie, I've procrastinated long enough to write this post. I've known about <a href="https://www.fast.ai/">Fast.ai</a> since 2018 and it's only now that I've managed to complete <a href="https://course.fast.ai/">Part 1 of the MOOC</a>. This is the latest 2020 edition of the course and a Part 2 has not yet been announced. However, Part 1 does offer a pretty comprehensive look into the state of the machine learning world today. There aren't any discussions about the bleeding edge of self-supervised learning or NLP, but that's to be expected from a course that's designed to serve as the stepping stone into the world of machine learning.</p>
+<p>In this post, we'll look at the basic theory of machine learning and define a glossary of machine learning jargon.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And to paraphrase Ze Frank here, I became fascinated by the shape of the stone!<sup id="fnref-1" class="footnote-ref"><a href="#fn-1">1</a></sup></p>
+<p>Blah blah blah.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As beginner-friendly as Fast.ai is, it does not come at the cost of features or flexibility. It is well suited to building commercial grade products as well as perform cutting-edge research. For now though, we'll limit ourselves to the topics covered in Part 1 of the Fast.ai MOOC <em>Practical Deep Learning for Coders</em>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The course covers the most common usecases for machine learning:</p>
-<ul>
-<li>Computer Vision, including image classification and object detection</li>
-<li>Natural Language Processing, including language modelling (i.e. text generation) and document classification</li>
-<li>Tabular Data Analysis, including categorical and continuous data, and time series data</li>
-<li>Collaborative Filtering, i.e. recommendataion systems</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The course also covers a variety of best known methods (BKMs) and tricks which are empirically known to perform well during model training and inference.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>While the course and the accompanying book, which is also <a href="https://github.com/fastai/fastbook">available free of cost here</a>, have been written from a teaching perspective, my goal with this series of articles is to distill the book down to its bare minimum, comprising only what's needed to get up and running with Fast.ai and become a practitioner. I will be glossing over a lot of theory and explanatory stuff; if you are a beginner with little prior knowledge about machine learning or the mathematics behind it, I will leave a few links to other resources when needed but would otherwise recommend that you complete the course directly. If you'd like to see a "best of", however, keep reading!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I also aim to cap off this series with a capstone project of sorts; I don't really have an idea about the usecase yet, but you never know when inspiration strikes! As of now, the most likely candidates are:</p>
-<ul>
-<li>Battery Health Prediction using <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/battery-prognostics/">NASA PCoE Battery Data</a></li>
-<li>Novel Bengali Poetry (i.e. pick-up lines) Generator using <a href="https://www.kaggle.com/truthr/free-bengali-poetry">Free Bengali Poetry</a> dataset by <a href="https://twitter.com/AllesistKode">Ritobrata Ghosh</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here's the ToC for the series!</p>
-<ol>
-<li>blah</li>
-<li>blah</li>
-<li>blah</li>
-<li>blah</li>
-<li>blah</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>With that out of the way, let's get started!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Footnotes">Footnotes<a class="anchor-link" href="#Footnotes"> </a></h3><p><div class="footnotes"><p id="fn-1">1. Ze Frank, <a href="https://www.youtube.com/watch?v=RYlCVwxoL_g">An Invocation for Beginnings</a><a href="#fnref-1" class="footnote footnotes">↩</a></p></div></p>
+<h3 id="Footnotes">Footnotes<a class="anchor-link" href="#Footnotes"> </a></h3><p><div class="footnotes"><p id="fn-1">1. <a href="placeholder">Placeholder</a><a href="#fnref-1" class="footnote footnotes">↩</a></p></div></p>
 
 </div>
 </div>
@@ -230,7 +164,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/helloworld/fastbook/jupyter/fastai/2021/08/12/fastai-0.html" hidden></a>
+</script><a class="u-url" href="/helloworld/fastbook/jupyter/fast.ai/2021/08/16/fastai-intro.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
