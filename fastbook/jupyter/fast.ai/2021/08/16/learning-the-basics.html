@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My Fast.ai Journey - Learning the Basics | Subhom Mitra</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="My Fast.ai Journey - Learning the Basics" />
+<meta name="author" content="Subhom Mitra" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An brief overview of the fundamentals of machine learning" />
+<meta property="og:description" content="An brief overview of the fundamentals of machine learning" />
+<link rel="canonical" href="https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html" />
+<meta property="og:url" content="https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html" />
+<meta property="og:site_name" content="Subhom Mitra" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-16T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-08-16T00:00:00-05:00","url":"https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html","@type":"BlogPosting","headline":"My Fast.ai Journey - Learning the Basics","dateModified":"2021-08-16T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html"},"author":{"@type":"Person","name":"Subhom Mitra"},"description":"An brief overview of the fundamentals of machine learning","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/helloworld/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://m1tr.github.io/helloworld/feed.xml" title="Subhom Mitra" /><link rel="shortcut icon" type="image/x-icon" href="/helloworld/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/helloworld/">Subhom Mitra</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/helloworld/about/">About Me</a><a class="page-link" href="/helloworld/search/">Search</a><a class="page-link" href="/helloworld/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">My Fast.ai Journey - Learning the Basics</h1><p class="page-description">An brief overview of the fundamentals of machine learning</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-16T00:00:00-05:00" itemprop="datePublished">
+        Aug 16, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/helloworld/categories/#fastbook">fastbook</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/helloworld/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/helloworld/categories/#fast.ai">fast.ai</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/M1TR/helloworld/tree/master/_notebooks/2021-08-16-learning-the-basics.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/helloworld/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/M1TR/helloworld/master?filepath=_notebooks%2F2021-08-16-learning-the-basics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/helloworld/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/M1TR/helloworld/blob/master/_notebooks/2021-08-16-learning-the-basics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/helloworld/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-08-16-learning-the-basics.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this post, we'll look at the basic theory of machine learning and define a glossary of machine learning jargon.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning"> </a></h3><p>Let's start at the beginning, with the definition of <em>machine learning</em>, coined by an IBM researcher named Arthur Samuel. In his classic 1962 essay <em>Artificial Intelligence: A Frontier of Automation<sup id="fnref-1" class="footnote-ref"><a href="#fn-1">1</a></sup></em>, he described the basic idea that instead of programming a computer with the exact steps to complete a certain task, <em>showing</em> the computer examples of completed tasks will allow it to figure out how to get there on its own! In essence, the computer itself defines the steps it needs to take to transform the inputs into desired outputs; it writes its own program.</p>
+<p>Samuels specified the basic idea of a <strong>training loop</strong> where a system is configured with a <strong>set of parameters</strong> and we have some way of <em>testing the effectiveness</em> of this configuration by observing the output of the system. We also need a way of automatically tweaking or <strong>tuning</strong> these parameters so that the output of the system keep improving. This, essentially, is a method using which a system can <strong>learn</strong> how to perform a task without any explicit instructions or programming. The system starts out with a random transformation and incrementally improves it to be able to transform the inputs into correct outputs.</p>
+<p>Today, the following process forms the heart of any machine learning algorithm:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&lt; insert image A &gt;</p>
+<center><font size="2"><i>The training loop</i></font></center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The functional form or <em>structure</em> of our transformation is called the <strong>architecture</strong>, it's a program, a mathematical function that converts our inputs into some output. </li>
+<li>The architecture has tunable knobs called <strong>parameters</strong> that change the way it processes inputs. <strong>Weights</strong> are a kind of parameter.</li>
+<li>The architecture and parameters together comprise the <strong>model</strong>.</li>
+<li>The output of the model are its <strong>predictions</strong>, which are calculated from the <strong>independent variables</strong>, which is the data <em>without the labels</em>.</li>
+<li>The measure of a model's performance is called the <strong>loss</strong>. The lower the loss, the better.</li>
+<li>The loss depends on both the predictions and the labels (also known as <strong>targets</strong> or <strong>dependent variables</strong>).</li>
+<li>The process of updating the parameters based on the loss is called <strong>training</strong>.</li>
+</ul>
+<p>When we are happy with our model's predictions <em>or</em> the loss value is sufficiently low, our training is complete. We then stop updating the parameters and calculating the loss and instead use the predictions directly; this is called <strong>inference</strong> and is what happens in production.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Neural-Networks">Neural Networks<a class="anchor-link" href="#Neural-Networks"> </a></h3><p>Now that we have an idea about how to design a system which can "learn", or improve its performance, on its own, it's time to see how exactly the system transforms inputs into outputs; essentially, we want to learn more about the <em>architecture</em> block. We want a mathematical function that is so flexible that it can, in theory, learn to transform any artitrary input into any arbitrary output. As it turns out, such a function does exist; it's called a neural network.</p>
+<p>In the influential two volume <em>Parallel Distributed Processing: Explorations in the Microstructure of Cognition</em> by David Rumelhart, James McClellan, and the PDP Research Group, published in 1986, a "computational framework for modelling cognitive processes" was introduced, inspired by the way neurons in organic brains operate. The idea here is that since traditional computer programs do not operate the way brains do, they also fail at tasks which are easy for the latter, such as recognising objects in pictures. PDP did not invent neural networks, but their approach laid the foundations that led to modern neural networks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><sup id="fnref-2" class="footnote-ref"><a href="#fn-2">2</a></sup>According to PDP, to achieve "parallel distributed processing", you need:</p>
+<ol>
+<li>A set of <em>processing units</em> which accept inputs, or <em>neurons</em></li>
+<li>A <em>state of activation</em> for each unit</li>
+<li>An <em>output function</em> for each unit</li>
+<li>A <em>pattern of connectivity</em> among units, i.e. a network between the units</li>
+<li>A <em>propagation rule</em> for propagating patterns of activities throughout the network</li>
+<li>An <em>activation rule</em> for combining the inputs to a unit with the current <em>state</em> of that unit to produce an output</li>
+<li>A <em>learning rule</em> whereby patterns of connectivity can be modified over time</li>
+<li>An <em>environment</em> within which the system operates</li>
+</ol>
+<p>&lt; insert image of neurons, neural networks &gt;</p>
+<p>And so a neural network is defined: a <em>network</em> of <em>neurons</em> that can take inputs and produce outputs. The behaviour of the network can be modified or tuned by modifying its <em>parameters</em>. Most modern neural networks are multi-layered, meaning that the outputs of a set of neurons are used as inputs for another set of neurons. According to a mathematical proof called the <em>Universal Approximation Theorem</em>, a neural network is flexible enough to model any arbitrary mathematical function.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's refer back to our training loop:</p>
+<p>&lt; insert image A &gt;</p>
+<p>Now that we have our "architecture" in place, we need a general way to update the parameters of the network, i.e. <em>optimise</em> it. Fortunately, we have a process for this as well, the most fundamental of which is called <em>stochastic gradient descent</em> or <em>SGD</em>. We use SGD to optimise our network based on the <em>loss</em> of the network. The loss, computed by a <em>loss function</em> is a measure of how far off the output of the network was from the correct response; the lower the loss, the better our network performs.</p>
+<p>And that's all there is to it: a neural network, an optimiser, and a loss function. Given enough data, this combination can learn to solve almost any task you provide.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Memorising-vs-Learning">Memorising vs Learning<a class="anchor-link" href="#Memorising-vs-Learning"> </a></h3><p>A delicate balance.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Transfer-Learning">Transfer Learning<a class="anchor-link" href="#Transfer-Learning"> </a></h3><p>deep learning and transfer learning</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Datasets">Datasets<a class="anchor-link" href="#Datasets"> </a></h3><p>garbage-in-garbage-out, Structuring data, train vs validation, creating good val sets, feedback loops</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Categories-of-usecases">Categories of usecases<a class="anchor-link" href="#Categories-of-usecases"> </a></h3><p>regression, classification, segmentation, obj det, nlp</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Types-of-networks">Types of networks<a class="anchor-link" href="#Types-of-networks"> </a></h3><p>overview of the major types of neural network architectures and their uses</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Statistcal-Methods-vs-Deep-Learning">Statistcal Methods vs Deep Learning<a class="anchor-link" href="#Statistcal-Methods-vs-Deep-Learning"> </a></h3><p>what to use and when</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Footnotes">Footnotes<a class="anchor-link" href="#Footnotes"> </a></h3><p><div class="footnotes"><p id="fn-1">1. <a href="placeholder">Placeholder</a><a href="#fnref-1" class="footnote footnotes">↩</a></p></div></p>
+<p><div class="footnotes"><p id="fn-2">2. <a href="https://github.com/fastai/fastbook/blob/master/01_intro.ipynb">Fastbook Chapter 1</a><a href="#fnref-2" class="footnote footnotes">↩</a></p></div></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="M1TR/helloworld"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+<a class="u-url" href="/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/helloworld/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <p class="feed-subscribe">
+            <a href="/helloworld/feed.xml">
+              <svg class="svg-icon orange">
+                <use xlink:href="/helloworld/assets/minima-social-icons.svg#rss"></use>
+              </svg><span>Subscribe</span>
+            </a>
+          </p>
+          <ul class="contact-list">
+            <li class="p-name">Subhom Mitra</li>
+            <li><a class="u-email" href="mailto:mitra.subhom@gmail.com">mitra.subhom@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Hello, World! Welcome to my personal website. Here you'll find projects I'm working on and occasional blog posts about stuff I find interesting. If you'd like to hire me, please check out my resume in the "About Me" section.</p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/M1TR" title="M1TR"><svg class="svg-icon grey"><use xlink:href="/helloworld/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/M1TR" title="M1TR"><svg class="svg-icon grey"><use xlink:href="/helloworld/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+  
+    </div>
+  
+  </footer></body>
+
+</html>
