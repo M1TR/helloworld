@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2020/01/01/post-template.html</loc>
+<lastmod>2020-01-01T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://m1tr.github.io/helloworld/markdown/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
@@ -9,12 +13,16 @@
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/16/fastai-0.html</loc>
+<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fastai/2021/08/16/ch-0-intro.html</loc>
 <lastmod>2021-08-16T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/learning-the-basics.html</loc>
+<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/16/ch-1-the-basics.html</loc>
 <lastmod>2021-08-16T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://m1tr.github.io/helloworld/fastbook/jupyter/fast.ai/2021/08/24/ch-X-computer-vision.html</loc>
+<lastmod>2021-08-24T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://m1tr.github.io/helloworld/about/</loc>
