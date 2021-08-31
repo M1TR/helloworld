@@ -11,19 +11,19 @@
 .site-footer {border-top: 0px solid};
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
-// @import "minima/fastpages-dracula-highlight"; 
+@import "minima/fastpages-dracula-highlight"; 
 // @import "minima/dracula-old"; //LIKEY SOMEWHAT KEEP FOR NOW
 // @import "minima/solarized.scss";
 
 // Make body text smaller, was 20px ME LIKEY
 .post-content p, .post-content li {
-   font-size: 16px;
+   font-size: 18px;
 }
 
-// Italicise post description ME LIKEY
-.post-header p {
-  font-style: italic
-}
+// // Italicise post description ME LIKEY
+// .post-header p {
+//   font-style: italic
+// }
 
 // Enabling dark mode
 // @import "minima/dark-mode";
